@@ -40,7 +40,8 @@
   header{
     position:fixed; top:0; left:0; right:0; z-index:50;
     padding:18px 0;
-    background:linear-gradient(to bottom, rgba(253,247,244,0.92), rgba(253,247,244,0));
+    background:var(--blush-deep);
+    box-shadow:0 2px 12px rgba(184,92,116,0.15);
     transition:background .3s ease, padding .3s ease, box-shadow .3s ease;
   }
   header.scrolled{
@@ -52,8 +53,8 @@
   nav{display:flex; align-items:center; justify-content:space-between;}
   .brand{display:flex; align-items:center; gap:12px;}
   .brand-mark{width:44px; height:44px; border-radius:50%; object-fit:cover;}
-.brand-name{font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--rose-deep); line-height:1.25; letter-spacing:.3px;}  .brand-name span{display:block; font-family:'Jost'; font-size:.6rem; letter-spacing:2px; color:var(--ink-soft); text-transform:uppercase; margin-top:2px; font-weight:500;}
-  .nav-links{display:flex; gap:32px; font-size:.85rem; letter-spacing:.3px;}
+.brand-name{font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--rose-deep); line-height:1.25; letter-spacing:.3px; text-shadow:0 1px 4px rgba(255,255,255,0.95), 0 0 14px rgba(255,255,255,0.75);}
+.brand-name span{display:block; font-family:'Jost'; font-size:.6rem; letter-spacing:2px; color:var(--ink-soft); text-transform:uppercase; margin-top:2px; font-weight:700; text-shadow:0 1px 3px rgba(255,255,255,0.95), 0 0 10px rgba(255,255,255,0.7);}  .nav-links{display:flex; gap:32px; font-size:.85rem; letter-spacing:.3px;}
   .nav-links a{opacity:.75; transition:opacity .2s, color .2s;}
   .nav-links a:hover{opacity:1; color:var(--rose-deep);}
   .nav-cta{
@@ -200,8 +201,8 @@
   body.lang-am h1, body.lang-am h2, body.lang-am h3, body.lang-am .value-quote, body.lang-am .footer-tagline, body.lang-am .brand-name{
   font-family:'Noto Serif Ethiopic','Cormorant Garamond',serif;
   }
-body.lang-am .brand-name{font-weight:700; color:var(--rose-deep); font-size:1.55rem;}
-  /* ---------- VALUE PROP ---------- */
+body.lang-am .brand-name{font-weight:700; color:var(--rose-deep); font-size:1.55rem; text-shadow:0 1px 4px rgba(255,255,255,0.95), 0 0 14px rgba(255,255,255,0.75);}
+body.lang-am .brand-name span{font-weight:700; text-shadow:0 1px 3px rgba(255,255,255,0.95), 0 0 10px rgba(255,255,255,0.7);}  /* ---------- VALUE PROP ---------- */
  .value{
   position:relative;
   background:
@@ -211,15 +212,16 @@ body.lang-am .brand-name{font-weight:700; color:var(--rose-deep); font-size:1.55
 }
   .value-quote{
   font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:500;
-  font-size:clamp(1.4rem,2.8vw,2rem); line-height:1.7; max-width:760px; margin:0 auto; text-align:center; color:var(--rose-deep);
+  font-size:clamp(1.7rem,3.4vw,2.4rem); line-height:1.7; max-width:760px; margin:0 auto; text-align:center; color:var(--rose-deep);
   text-shadow:0 2px 4px rgba(255,255,255,0.9), 0 0 30px rgba(255,255,255,0.7);
 }
   .value-quote span{color:var(--ink);}
   .value .wrap{
-  background:rgba(255,255,255,0.22);
-  backdrop-filter:blur(3px);
+  background:rgba(255,255,255,0.55);
+  backdrop-filter:blur(6px);
   border-radius:20px;
   padding:50px 40px;
+  box-shadow:0 8px 30px rgba(184,92,116,0.12);
 }
   .stat-row{display:flex; gap:40px; margin-top:52px; justify-content:center; flex-wrap:wrap;}
   .stat{text-align:center;}
